@@ -1,0 +1,103 @@
+:root{
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --verydarkblue:hsl(217, 54%, 11%); /*(main BG)*/
+    --verydarkblue2: hsl(216, 50%, 16%); /*(card BG)*/
+    --verydarkblue3: hsl(215, 32%, 27%); /*(line)*/
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--verydarkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 30px;
+}
+.line{
+    background-color: var(--verydarkblue3);
+    outline: none;
+    border-color: var(--verydarkblue3);
+}
+
+.container{
+    width: 90%;
+    margin: 0px auto;
+}
+
+
+.card{
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verydarkblue2);
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px #00000024;
+}
+
+.image-card{
+    margin-top: 20px;
+}
+
+.image{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.description-card h3{
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--white);
+    font-weight: 600;
+    margin: 15px 0px;
+    cursor: pointer;
+}
+
+.description-card h3:hover{
+    color: var(--cyan);
+}
+
+.description-card > p{
+    color: var(--softblue);
+}
+
+.texts-card{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px;
+}
+
+.text-price{
+    font-weight: 600;
+    color: var(--cyan);
+}
+
+.text-date{
+    font-weight: 600;
+    color: var(--softblue);
+}
+
+.footer-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    
+}
+
+.creator-image{
+    width: 32px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    margin: 0px 10px;
+}
